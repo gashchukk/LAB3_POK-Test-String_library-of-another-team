@@ -65,6 +65,8 @@ Quality of Implementation:
 - The functions seem to perform as expected for typical use cases, though some corner cases might not have been thoroughly tested.
 - The memory management seems to be appropriately handled, with destructor, constructors(However not all were implemented. Go to important to see more).
 
+Suggested grade: 9.5
+
 # Additional tasks
 We compared the performance of 
 standard C++ strings and our custom 'my_str_t' 
