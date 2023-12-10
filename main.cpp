@@ -8,12 +8,13 @@ my_str_t* read_file(const char *path, size_t* data_size) {
 
     if (!inputFile.is_open()) {
         std::cerr << "Error: File could not be opened." << std::endl;
+        exit(EXIT_FAILURE);
     }
 
     my_str_t* data = new my_str_t[1];
     my_str_t word;
-    int i = 0;
-    int curr_capacity = 1;
+    size_t i = 0;
+    size_t curr_capacity = 1;
     while(!inputFile.eof() and !inputFile.bad()){
         inputFile >> word;
         data[i] = word;
@@ -22,7 +23,7 @@ my_str_t* read_file(const char *path, size_t* data_size) {
             curr_capacity *= 2;
             my_str_t* new_data = new my_str_t[curr_capacity];
 
-            for (int j = 0; j < (i + 1); ++j) {
+            for (size_t j = 0; j < (i + 1); ++j) {
                 new_data[j] = data[j];
                 *data_size = j;
             }
@@ -40,8 +41,8 @@ my_str_t* read_file(const char *path, size_t* data_size) {
 
 //main task
 void word_concat(my_str_t* concat_data, size_t data_size) {
-    int length = data_size;
-    for (int i = 0; i < length; ++i) {
+    size_t length = data_size;
+    for (size_t i = 0; i < length; ++i) {
         if (concat_data[i].size() != 0 && (i+1) != length) {
             concat_data[i] = concat_data[i] + my_str_t{":"} + concat_data[i+1];
             concat_data[i+1] = my_str_t{};
@@ -59,20 +60,29 @@ void word_concat(my_str_t* concat_data, size_t data_size) {
             dest++;
         }
     }
+
 }
 
-int main(int argc, char* argv[]) {
+//int main(int argc, char* argv[]) {
+int main() {
     size_t data_size;
-    my_str_t* data = read_file(argv[1], &data_size);
-
+    // my_str_t* data = read_file(argv[1], &data_size);
+    my_str_t* data = read_file("/Users/shumskyjury/Desktop/lab3-strings-usage-shumskyi_hashchuk_arnauta/random_text.txt", &data_size);
 
     // Word concantenation goes here
     word_concat(data, data_size);
 
     // Visualize output
-    for (int i = 0; i < data_size; ++i) {
-        std::cout << *(data + i) << std::endl;
+    // write to another file
+    std::ofstream MyFile("/Users/shumskyjury/Desktop/lab3-strings-usage-shumskyi_hashchuk_arnauta/new_file.txt");
+    for (size_t i = 0; i < data_size; ++i) {
+        // std::cout << *(data + i) << std::endl;
+        if (*(data + i) != "") {
+            MyFile << *(data + i);
+            MyFile << "\n";
+        }
     }
+    MyFile.close();
 
     delete[] data;
     return 0;

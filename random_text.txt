@@ -1,9 +1,20 @@
-In today's fast-paced world, technology continues to advance at an astonishing rate. From smartphones to self-driving cars, innovation is everywhere. The impact of these technological advancements is profound and far-reaching.
+Здавати роботу тут: https://classroom.github.com/a/WWODqc8h
+В readme.md вкажіть:
+    Склад команди :[КОМАНДА],
+    додаткові завдання: [список].
 
-Consider the convenience of smartphones. These devices are no longer just for making calls; they are mini-computers that provide instant access to information, communication, and entertainment. We can order food, hail a ride, or even control our homes with a few taps on the screen.
+Крім того, роботу потрібно здати на CMS, навівши таку інформацію:
 
-Self-driving cars promise to revolutionize transportation. They have the potential to reduce accidents and traffic congestion while providing mobility to those who are unable to drive. However, ethical and safety concerns remain.
+    Здав/здала роботу на GitHub: <посилання на репозиторій>.
+    Склад команди :[КОМАНДА],
+    додаткові завдання: [список]
 
-The rise of artificial intelligence (AI) has implications across various industries. AI can improve healthcare, streamline manufacturing, and enhance customer service. But it also raises questions about privacy and job security.
 
-While technology has brought many benefits, it is essential to strike a balance. We must consider the ethical and societal consequences of these innovations. As we embrace technology, we should do so with a mindful and responsible approach.
+Завдання (3 бали)
+
+Під час попередньої практичної ви створювали бібліотеку роботи із стрічками. У цій роботі ви повинні скористатися бібліотекою, написаною вашими колегами та написати на неї відгук.
+
+Номер завдання отримуєте так:
+Вибираєте учасника/учасницю вашої команди, найвищу/найвищого у списку від'ємних балів.
+Берете остачу від ділення його/її номера на 5 та додаєте 1.
+Вимоги до роботи -- що робити і як, описані в главі ''Завдання-3: скористатися бібліотекою стрічок, створеною іншою командою'' методички до роботи "Написати, мовою С++, бібліотеку для роботи із динамічними стрічками".
