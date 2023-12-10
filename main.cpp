@@ -66,31 +66,32 @@ void word_concat(my_str_t* concat_data, size_t data_size) {
 
 }
 
-//int main(int argc, char* argv[]) {
-int main() {
-//    size_t data_size;
-//    // my_str_t* data = read_file(argv[1], &data_size);
+int main(int argc, char* argv[]) {
+    size_t data_size;
+     my_str_t* data = read_file(argv[1], &data_size);
+     // to debug
 //    my_str_t* data = read_file("/Users/shumskyjury/Desktop/lab3-strings-usage-shumskyi_hashchuk_arnauta/random_text.txt", &data_size);
-//
-//    // Word concantenation goes here
-//    word_concat(data, data_size);
-//
-//    // Visualize output
-//    // write to another file
-//    std::ofstream MyFile("/Users/shumskyjury/Desktop/lab3-strings-usage-shumskyi_hashchuk_arnauta/new_file.txt");
-//    for (size_t i = 0; i < data_size; ++i) {
-//        // std::cout << *(data + i) << std::endl;
-//        if (*(data + i) != "") {
-//            MyFile << *(data + i);
-//            MyFile << "\n";
-//        }
-//    }
-//    MyFile.close();
-//
-//    delete[] data;
 
-    benchmark::Initialize(&argc, argv);
-    benchmark::RunSpecifiedBenchmarks();
+    // Word concantenation goes here
+    word_concat(data, data_size);
+
+    // Visualize output
+    // write to another file
+    std::ofstream MyFile("/Users/shumskyjury/Desktop/lab3-strings-usage-shumskyi_hashchuk_arnauta/new_file.txt");
+    for (size_t i = 0; i < data_size; ++i) {
+        if (*(data + i) != "") {
+            MyFile << *(data + i);
+            MyFile << "\n";
+        }
+    }
+    MyFile.close();
+
+    delete[] data;
+
+
+    // to run benchmarks uncoment it
+//    benchmark::Initialize(&argc, argv);
+//    benchmark::RunSpecifiedBenchmarks();
     return 0;
 }
 

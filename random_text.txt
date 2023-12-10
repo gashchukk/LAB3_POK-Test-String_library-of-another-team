@@ -1,20 +1,19 @@
-Здавати роботу тут: https://classroom.github.com/a/WWODqc8h
-В readme.md вкажіть:
-    Склад команди :[КОМАНДА],
-    додаткові завдання: [список].
+Lorem Ipsum is simply dummy text of the printing and t
 
-Крім того, роботу потрібно здати на CMS, навівши таку інформацію:
+ypesetting industry. Lorem Ipsum has been the industry
 
-    Здав/здала роботу на GitHub: <посилання на репозиторій>.
-    Склад команди :[КОМАНДА],
-    додаткові завдання: [список]
+'s standard dummy text ever since the 1500s, when a
 
+n unknown printer took a galley of type and scrambled
 
-Завдання (3 бали)
+it to make a type specimen book. It has survived not only five
 
-Під час попередньої практичної ви створювали бібліотеку роботи із стрічками. У цій роботі ви повинні скористатися бібліотекою, написаною вашими колегами та написати на неї відгук.
+ centuries, but also the leap into electronic typesetting, remaining
 
-Номер завдання отримуєте так:
-Вибираєте учасника/учасницю вашої команди, найвищу/найвищого у списку від'ємних балів.
-Берете остачу від ділення його/її номера на 5 та додаєте 1.
-Вимоги до роботи -- що робити і як, описані в главі ''Завдання-3: скористатися бібліотекою стрічок, створеною іншою командою'' методички до роботи "Написати, мовою С++, бібліотеку для роботи із динамічними стрічками".
+  essentially unchanged. It was popularised in the 1960s with the release
+
+  of Letraset sheets containing Lorem Ipsum passages, and more recently wi
+
+  th desktop publishing software like Aldus PageMaker including vers
+
+  ions of Lorem Ipsum.
