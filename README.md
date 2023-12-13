@@ -66,9 +66,9 @@ the work is done quite well, almost perfectly, so the grade - **9.5/10**
 In order to make dynamic array we were supposed to add additional constructor
 <img src="https://drive.google.com/uc?export=view&amp;id=17GFlesYOytSsI_kdBtkiL3gmcsjfImU9">
 
-Google Benchmark enabled us to measure execution times 
+Google Benchmark allows us to measure execution times 
 and memory usage for various string operations, 
 providing data-driven insights for optimization. 
 This analysis informed our ongoing 
-efforts to enhance the efficiency and functionality 
-of 'my_str_t'.
+efforts to check the efficiency and functionality 
+of 'my_str_t'. In benchmarks_controller.h we have tested these methods: append, find, insert, clear, reserve, swap and size. After running main.cpp the execution time comparison between built in strings and my_str_t will be displayed.
