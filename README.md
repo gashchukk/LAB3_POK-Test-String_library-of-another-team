@@ -14,7 +14,7 @@ It can be performed two ways:
 mkdir build 
 cd build
 cmake .. && make
-./lab3_strings_usage_shumskyi_hashchuk_arnauta ../random_text.txt
+./lab3_strings_usage_shumskyi_hashchuk_arnauta ../random_text.txt ../new.txt
 ```
 
 2) It can be also done by clicking arrow on the top right and it will be automatically compile and execute needed files

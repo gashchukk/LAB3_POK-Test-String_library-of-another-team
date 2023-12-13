@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
     word_concat(data, data_size);
 
     // write to another file
-    std::ofstream MyFile("new_file.txt");
+    std::ofstream MyFile(argv[2]);
     for (size_t i = 0; i < data_size; ++i) {
         if (*(data + i) != "") {
             MyFile << *(data + i);
