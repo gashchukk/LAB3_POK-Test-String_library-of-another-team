@@ -86,8 +86,8 @@ int main(int argc, char* argv[]) {
     delete[] data;
 
     // to run benchmarks uncoment it
-//    benchmark::Initialize(&argc, argv);
-//    benchmark::RunSpecifiedBenchmarks();
+    benchmark::Initialize(&argc, argv);
+    benchmark::RunSpecifiedBenchmarks();
     return 0;
 }
 
