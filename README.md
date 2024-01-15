@@ -73,3 +73,4 @@ This analysis informed our ongoing
 efforts to check the efficiency and functionality 
 of 'my_str_t'. In benchmarks_controller.h we have tested these methods: append, find, insert, clear, reserve, swap and size. After running main.cpp the execution time comparison between built in strings and my_str_t will be displayed.
 # Lab3_POK
+# Lab3_POK
